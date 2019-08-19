@@ -1,0 +1,5 @@
+*.o
+config*
+archive.sh
+*.exe
+DoxyFile
