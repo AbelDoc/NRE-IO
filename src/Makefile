@@ -1,4 +1,4 @@
-OBJ = $(OBJDIR)main.o 
+OBJ = $(OBJDIR)NRE_Main.o 
 OBJDIR = ../obj/
 
 all : $(OBJ)
