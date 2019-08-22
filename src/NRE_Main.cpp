@@ -7,6 +7,9 @@
      * @copyright CC-BY-NC-SA
      */
 
+    #include "Header/NRE_IO.hpp"
+    #include "Header/NRE_Exception.hpp"
+
     int main(int, char**) {
 
         return 0;
