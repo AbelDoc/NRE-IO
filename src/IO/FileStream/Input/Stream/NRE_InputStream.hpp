@@ -78,8 +78,9 @@
                         /**
                          * Read a file's line and store it into the given string
                          * @param line the string to store the read line
+                         * @return if the file has been totally read
                          */
-                        void readLine(Utility::String& line);
+                        bool readLine(Utility::String& line);
                         /**
                          * Set the file cursor position to the begin + offset
                          * @param offset the file's offset

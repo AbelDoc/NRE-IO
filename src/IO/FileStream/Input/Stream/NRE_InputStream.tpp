@@ -14,7 +14,7 @@
                 return getStream().tellg();
             }
 
-            inline void InputStream::readLine(Utility::String& line) {
+            inline bool InputStream::readLine(Utility::String& line) {
                 line.clear();
                 auto& stream = getStream();
 
@@ -23,6 +23,8 @@
                 while (!stream.eof() && ((current = static_cast <char> (stream.get())) != '\n')) {
                     line.pushBack(current);
                 }
+
+                return stream.operator bool();
             }
 
             inline void InputStream::seekBegin(size_t offset) {
