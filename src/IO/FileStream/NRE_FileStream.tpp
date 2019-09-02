@@ -39,9 +39,5 @@
                 return file;
             }
 
-            inline std::ostream& operator <<(std::ostream& stream, FileStream const& o) {
-                return stream << o.toString();
-            }
-
         }
     }
