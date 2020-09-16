@@ -22,3 +22,5 @@
     #include "../IO/FileStream/BinaryInput/Stream/NRE_BinaryInputStream.hpp"
     #include "../IO/FileStream/Output/Stream/NRE_OutputStream.hpp"
     #include "../IO/FileStream/BinaryOutput/Stream/NRE_BinaryOutputStream.hpp"
+
+    #include "NRE_Exception.hpp"
