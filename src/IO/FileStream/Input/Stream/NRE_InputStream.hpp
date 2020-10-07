@@ -11,7 +11,7 @@
 
     #include <fstream>
 
-    #include <Header/NRE_Utility.hpp>
+    #include <Header/NRE_Core.hpp>
 
      /**
      * @namespace NRE
@@ -80,7 +80,7 @@
                          * @param line the string to store the read line
                          * @return if the file has been totally read
                          */
-                        bool readLine(Utility::String& line);
+                        bool readLine(Core::String& line);
                         /**
                          * Set the file cursor position to the begin + offset
                          * @param offset the file's offset

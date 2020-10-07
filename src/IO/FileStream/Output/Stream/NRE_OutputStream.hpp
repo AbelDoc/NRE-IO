@@ -11,7 +11,7 @@
 
     #include <fstream>
 
-    #include <Header/NRE_Utility.hpp>
+    #include <Header/NRE_Core.hpp>
 
      /**
      * @namespace NRE

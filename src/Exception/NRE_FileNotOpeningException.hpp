@@ -18,7 +18,7 @@
     namespace NRE {
         /**
          * @namespace Exception
-         * @brief Utility's API
+         * @brief Core's API
          */
         namespace Exception {
 
@@ -32,7 +32,7 @@
                      * Construct the exception with a custom log
                      * @param log the exception's log
                      */
-                    FileNotOpeningException(Utility::String const& log) throw() : IOException("FileNotOpening Exception : " + log) {
+                    FileNotOpeningException(Core::String const& log) throw() : IOException("FileNotOpening Exception : " + log) {
                     }
             };
         }

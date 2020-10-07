@@ -1,12 +1,12 @@
 export CXX = g++.exe
 export LD = g++.exe
 
-export CFLAGS = -pedantic -Wno-virtual-move-assign -Wall -Wextra -Wfloat-equal -Wstrict-overflow -Wshadow -Wconversion -Wunreachable-code -Wuninitialized -Winit-self -Werror -fstrict-overflow -O3 -std=c++17
+export CFLAGS = -pedantic -Wno-virtual-move-assign -Wall -Wextra -Wfloat-equal -Wstrict-overflow -Wshadow -Wconversion -Wunreachable-code -Wuninitialized -Winit-self -Werror -fstrict-overflow -O3 -std=c++20
 export LDFLAGS = 
 
-export INC = -I"C:\lib\MinGW64_7.3\include" -I"C:\Users\abell\Documents\GitHub\NRE-Utility\src" 
+export INC = -I"C:\lib\MinGW64_10.2\include" -I"C:\Users\abell\Documents\GitHub\NRE-Core\src" 
 export LIB = "-lmingw32" 
-export LIBDIR = -L"C:\lib\MinGW64_7.3\lib" 
+export LIBDIR = -L"C:\lib\MinGW64_10.2\lib" 
 
 OBJDIR = obj/
 BIN = bin/

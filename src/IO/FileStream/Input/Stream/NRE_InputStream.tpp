@@ -14,7 +14,7 @@
                 return getStream().tellg();
             }
 
-            inline bool InputStream::readLine(Utility::String& line) {
+            inline bool InputStream::readLine(Core::String& line) {
                 line.clear();
                 auto& stream = getStream();
 

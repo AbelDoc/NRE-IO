@@ -12,7 +12,7 @@
     #include <iostream>
     #include <fstream>
 
-    #include <Header/NRE_Utility.hpp>
+    #include <Header/NRE_Core.hpp>
 
      /**
      * @namespace NRE
@@ -31,7 +31,7 @@
              */
             class File {
                 private:    //Fields
-                    Utility::String path;   /**< The file's path */
+                    Core::String path;   /**< The file's path */
 
                 public:    // Methods
                     //## Constructor ##//
@@ -43,7 +43,7 @@
                          * Construct a File with the given path
                          * @param p the file's path
                          */
-                        File(Utility::String const& p);
+                        File(Core::String const& p);
                         /**
                          * Construct a File from a char array for compatibility
                          * @param p the char array
@@ -74,14 +74,14 @@
                         /**
                          * @return the file's path
                          */
-                        Utility::String const& getPath() const;
+                        Core::String const& getPath() const;
 
                     //## Setter ##//
                         /**
                          * Set the file's path
                          * @param p the new file's path
                          */
-                        void setPath(Utility::String const& p);
+                        void setPath(Core::String const& p);
 
                     //## Methods ##//
                         /**
@@ -110,7 +110,7 @@
                          * @param s the string to add
                          * @return  the concatenated string
                          */
-                        Utility::String operator +(Utility::String const& s) const;
+                        Core::String operator +(Core::String const& s) const;
                         /**
                          * Compute the file resulting in the concatenation of 2 file path
                          * @return the computed file
@@ -122,7 +122,7 @@
                          * Convert the file into a string
                          * @return the converted file
                          */
-                        Utility::String const& toString() const;
+                        Core::String const& toString() const;
 
             };
 

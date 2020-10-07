@@ -10,17 +10,17 @@
     namespace NRE {
         namespace IO {
 
-            inline File::File(Utility::String const& p) : path(p) {
+            inline File::File(Core::String const& p) : path(p) {
             }
 
             inline File::File(char const p[]) : path(p) {
             }
 
-            inline Utility::String const& File::getPath() const {
+            inline Core::String const& File::getPath() const {
                 return path;
             }
 
-            inline void File::setPath(Utility::String const& p) {
+            inline void File::setPath(Core::String const& p) {
                 path = p;
             }
 
@@ -33,7 +33,7 @@
                 return tmp.good();
             }
 
-            inline Utility::String File::operator +(Utility::String const& s) const {
+            inline Core::String File::operator +(Core::String const& s) const {
                 return path + s;
             }
 
@@ -41,7 +41,7 @@
                 return File(path + f.path);
             }
 
-            inline Utility::String const& File::toString() const {
+            inline Core::String const& File::toString() const {
                 return path;
             }
 
